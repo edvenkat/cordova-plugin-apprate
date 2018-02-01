@@ -70,6 +70,7 @@ AppRate = (function() {
 
   promptForStoreRatingWindowButtonClickHandler = function(buttonIndex) {
     var base = AppRate.preferences.callbacks, currentBtn = null;
+   alert(buttonIndex);
     switch (buttonIndex) {
       case 0:
         updateCounter('reset');
