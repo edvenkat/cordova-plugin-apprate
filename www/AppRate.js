@@ -85,7 +85,7 @@ AppRate = (function() {
         break;
       case 3:
         currentBtn = localeObj.rateButtonLabel;
-        updateCounter('stop');
+        updateCounter();
         AppRate.navigateToAppStore();
         break;
     }
