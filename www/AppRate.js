@@ -144,7 +144,7 @@ AppRate = (function() {
 
   showDialog = function(immediately) {
     var base = AppRate.preferences.callbacks;
-    alert(counter.countdown +" - "+immediately);
+   // alert(counter.countdown +" - "+immediately);
     if (counter.countdown === AppRate.preferences.usesUntilPrompt || immediately) {
       localeObj = Locales.getLocale(AppRate.preferences.useLanguage, AppRate.preferences.displayAppName, AppRate.preferences.customLocale);
 
@@ -284,7 +284,7 @@ AppRate = (function() {
     if (/(iPhone|iPod|iPad)/i.test(navigator.userAgent.toLowerCase())) {
       if (this.preferences.inAppReview) {
         updateiOSRatingData();
-        var showNativePrompt = iOSRating.timesPrompted < 5;
+        var showNativePrompt = iOSRating.timesPrompted < 100;
         exec(null, null, 'AppRate', 'launchiOSReview', [this.preferences.storeAppURL.ios, showNativePrompt]);
       } else {
         iOSVersion = navigator.userAgent.match(/OS\s+([\d\_]+)/i)[0].replace(/_/g, '.').replace('OS ', '').split('.');
