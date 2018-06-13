@@ -162,7 +162,7 @@ AppRate = (function() {
   };
 
   localStorageParam = function(itemName, itemValue, action) {
-   alert('itemName'+itemName);
+  // alert('itemName'+itemName);
     if (itemValue == null) {
       itemValue = null;
     }
@@ -175,7 +175,7 @@ AppRate = (function() {
     switch (action) {
       case true:
         localStorage.setItem(itemName, itemValue);
-       alert('itemName'+itemName+'itemValue'+itemValue);
+       //alert('itemName'+itemName+'itemValue'+itemValue);
         break;
       case false:
         return localStorage.getItem(itemName);
