@@ -144,7 +144,7 @@ AppRate = (function() {
 
   showDialog = function(immediately) {
     var base = AppRate.preferences.callbacks;
-    alert(counter.countdown +" - "+immediately);
+    //alert(counter.countdown +" - "+immediately);
     if (counter.countdown === AppRate.preferences.usesUntilPrompt || immediately) {
       localeObj = Locales.getLocale(AppRate.preferences.useLanguage, AppRate.preferences.displayAppName, AppRate.preferences.customLocale);
 
